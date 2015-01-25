@@ -1,0 +1,1 @@
+/home/murmeliusz/.vim/janus/vim/vimrc
