@@ -19,6 +19,7 @@ set shiftwidth=2 " How many columns text is indented with the reindent operation
 set softtabstop=2 " How many columns vim uses when you hit Tab in insert mode
 set autoindent " Copy the indentation from the previous line
 set foldmethod=syntax
+colors desert
 
 " Start Vundler
 filetype off " required
