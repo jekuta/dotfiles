@@ -1,4 +1,4 @@
-Vim
+<h1>Vim</h1>
 
 use 7.4
 
@@ -14,3 +14,5 @@ https://github.com/kien/ctrlp.vim
 https://github.com/scrooloose/syntastic
 https://github.com/tpope/vim-fugitive
 https://github.com/thoughtbot/vim-rspec
+https://github.com/tpope/vim-surround
+https://github.com/bling/vim-bufferline

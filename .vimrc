@@ -18,6 +18,7 @@ set expandtab " Tab in insert mode will produce the appropriate number of spaces
 set shiftwidth=2 " How many columns text is indented with the reindent operations (<< and >>)
 set softtabstop=2 " How many columns vim uses when you hit Tab in insert mode
 set autoindent " Copy the indentation from the previous line
+set foldmethod=syntax
 
 " Start Vundler
 filetype off " required
@@ -36,6 +37,8 @@ Plugin 'ctrlpvim/ctrlp.vim'
 Plugin 'scrooloose/syntastic'
 Plugin 'tpope/vim-fugitive'
 Plugin 'thoughtbot/vim-rspec'
+Plugin 'tpope/vim-surround'
+Plugin 'bling/vim-bufferline'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -88,3 +91,9 @@ let g:syntastic_always_populate_loc_list = 1
 let g:syntastic_auto_loc_list = 1
 let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
+
+" RSpec.vim mappings
+map <Leader>t :call RunCurrentSpecFile()<CR>
+map <Leader>s :call RunNearestSpec()<CR>
+map <Leader>l :call RunLastSpec()<CR>
+map <Leader>a :call RunAllSpecs()<CR>
