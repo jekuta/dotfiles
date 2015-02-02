@@ -40,6 +40,7 @@ Plugin 'tpope/vim-fugitive'
 Plugin 'thoughtbot/vim-rspec'
 Plugin 'tpope/vim-surround'
 Plugin 'bling/vim-bufferline'
+Plugin 'scrooloose/nerdcommenter'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required

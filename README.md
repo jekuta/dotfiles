@@ -16,3 +16,4 @@ https://github.com/tpope/vim-fugitive
 https://github.com/thoughtbot/vim-rspec
 https://github.com/tpope/vim-surround
 https://github.com/bling/vim-bufferline
+https://github.com/scrooloose/nerdcommenter
