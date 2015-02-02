@@ -17,3 +17,5 @@ https://github.com/thoughtbot/vim-rspec
 https://github.com/tpope/vim-surround
 https://github.com/bling/vim-bufferline
 https://github.com/scrooloose/nerdcommenter
+https://github.com/nelstrom/vim-textobj-rubyblock
+https://github.com/Julian/vim-textobj-brace
