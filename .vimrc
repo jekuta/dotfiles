@@ -12,7 +12,7 @@ endif
 let mapleader = " "
 
 " Make it obvious where 80 characters is
-set textwidth=80
+set textwidth=100
 set colorcolumn=+1
 
 " Set line numbers
@@ -24,8 +24,14 @@ set expandtab " Tab in insert mode will produce the appropriate number of spaces
 set shiftwidth=2 " How many columns text is indented with the reindent operations (<< and >>)
 set softtabstop=2 " How many columns vim uses when you hit Tab in insert mode
 set autoindent " Copy the indentation from the previous line
-set foldmethod=syntax
-colors desert
+" set foldmethod=syntax
+
+" Easier split navigation
+" http://robots.thoughtbot.com/vim-splits-move-faster-and-more-naturally
+nnoremap <C-J> <C-W><C-J>
+nnoremap <C-K> <C-W><C-K>
+nnoremap <C-L> <C-W><C-L>
+nnoremap <C-H> <C-W><C-H>
 
 " Start Vundler
 filetype off " required
@@ -54,6 +60,9 @@ Plugin 'Julian/vim-textobj-brace'
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
 filetype plugin indent on    " required
+
+" Set colorscheme
+colorscheme 256-jungle
 
 " Make sure Vim returns to the same line when you reopen a file.
 augroup line_return
