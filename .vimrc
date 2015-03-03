@@ -56,6 +56,7 @@ Plugin 'scrooloose/nerdcommenter'
 Plugin 'kana/vim-textobj-user'
 Plugin 'nelstrom/vim-textobj-rubyblock'
 Plugin 'Julian/vim-textobj-brace'
+Plugin 'bronson/vim-trailing-whitespace'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
