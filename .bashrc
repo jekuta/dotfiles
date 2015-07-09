@@ -120,7 +120,7 @@ export PS1='\[\033[34m\] \w\[\033[01;33m\]$(__git_ps1)\[\033[01;34m\] \$\[\033[0
 
 alias be='bundle exec'
 alias strchk='bundle exec rake strike:dev-tools:check'
-alias gs='git status '
+alias gits='git status '
 alias ga='git add '
 alias gb='git branch '
 alias gc='git commit '
