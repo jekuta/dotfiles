@@ -57,16 +57,20 @@ Plugin 'kana/vim-textobj-user'
 Plugin 'nelstrom/vim-textobj-rubyblock'
 Plugin 'Julian/vim-textobj-brace'
 Plugin 'bronson/vim-trailing-whitespace'
+Plugin 'morhetz/gruvbox'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
 filetype plugin indent on    " required
 
 " Set 256 Colors
-set t_Co=256
+"set t_Co=256
+set term=xterm-256color
 
 " Set colorscheme
 colorscheme gruvbox
+" Set dark gruvbox
+set background=dark
 
 " Make sure Vim returns to the same line when you reopen a file.
 augroup line_return
@@ -79,8 +83,9 @@ augroup END
 
 " Airline
 set laststatus=2
-let g:airline_theme="light"
-let g:airline_powerline_fonts=2
+set linespace=0
+let g:airline_theme="luna"
+let g:airline_powerline_fonts=1
 let g:airline#extensions#tabline#enabled = 1
 
 if !exists('g:airline_symbols')
