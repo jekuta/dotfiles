@@ -62,8 +62,14 @@ Plugin 'ntpeters/vim-better-whitespace'
 call vundle#end()            " required
 filetype plugin indent on    " required
 
+" Set 256 Colors
+"set t_Co=256
+set term=xterm-256color
+
 " Set colorscheme
-colorscheme 256-jungle
+colorscheme gruvbox
+" Set dark gruvbox
+set background=dark
 
 " Make sure Vim returns to the same line when you reopen a file.
 augroup line_return
@@ -74,13 +80,12 @@ augroup line_return
         \ endif
 augroup END
 
-" Set 256 Colors
-set t_Co=256
-
 " Airline
 set laststatus=2
-let g:airline_theme="light"
-let g:airline_powerline_fonts=2
+set linespace=0
+let g:airline_theme="luna"
+let g:airline_powerline_fonts=1
+let g:airline#extensions#tabline#enabled = 1
 
 if !exists('g:airline_symbols')
   let g:airline_symbols = {}
