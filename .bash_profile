@@ -32,11 +32,6 @@ if [ -x /usr/bin/dircolors ]; then
     alias egrep='egrep --color=auto'
 fi
 
-# some more ls aliases
-alias ll='ls -alF'
-alias la='ls -A'
-alias l='ls -CF'
-
 # Add an "alert" alias for long running commands.  Use like so:
 #   sleep 10; alert
 alias alert='notify-send --urgency=low -i "$([ $? = 0 ] && echo terminal || echo error)" "$(history|tail -n1|sed -e '\''s/^\s*[0-9]\+\s*//;s/[;&|]\s*alert$//'\'')"'
@@ -54,18 +49,10 @@ export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
 export GIT_PS1_SHOWDIRTYSTATE=1
 export PS1='\[\033[34m\] \w\[\033[01;33m\]$()\[\033[01;34m\] \$\[\033[00m\] '
 
-alias be='bundle exec'
-alias strchk='bundle exec rake strike:dev-tools:check'
-alias gits='git status '
-alias ga='git add '
-alias gb='git branch '
-alias gc='git commit '
-alias gd='git diff '
-alias go='git checkout '
-alias gk='gitk --all&'
-
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
 source ~/.profile
 # Mongodb
 export MONGO_PATH=/usr/local/mongodb
 export PATH=$PATH:$MONGO_PATH/bin
+
+source ~/git-completion.bash
