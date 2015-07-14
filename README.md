@@ -5,6 +5,7 @@ use 7.4
 set 256 colors
 http://vim.wikia.com/wiki/256_colors_in_vim
 
+Set download powerline fonts fonts for airline
 <h2>Plugins</h2>
 https://github.com/gmarik/Vundle.vim
 https://github.com/flazz/vim-colorschemes

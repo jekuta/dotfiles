@@ -11,7 +11,7 @@ endif
 " Leader
 let mapleader = " "
 
-" Make it obvious where 80 characters is
+" Make it obvious where 100 characters is
 set textwidth=100
 set colorcolumn=+1
 
@@ -57,6 +57,7 @@ Plugin 'kana/vim-textobj-user'
 Plugin 'nelstrom/vim-textobj-rubyblock'
 Plugin 'Julian/vim-textobj-brace'
 Plugin 'ntpeters/vim-better-whitespace'
+Plugin 'ntpeters/vim-airline-colornum'
 Plugin 'morhetz/gruvbox'
 
 " All of your Plugins must be added before the following line
@@ -64,7 +65,6 @@ call vundle#end()            " required
 filetype plugin indent on    " required
 
 " Set 256 Colors
-"set t_Co=256
 set term=xterm-256color
 
 " Set colorscheme
@@ -74,37 +74,19 @@ set background=dark
 
 " Make sure Vim returns to the same line when you reopen a file.
 augroup line_return
-    au!
-    au BufReadPost *
-        \ if line("'\"") > 0 && line("'\"") <= line("$") |
-        \     execute 'normal! g`"zvzz' |
-        \ endif
+  au!
+  au BufReadPost *
+      \ if line("'\"") > 0 && line("'\"") <= line("$") |
+      \     execute 'normal! g`"zvzz' |
+      \ endif
 augroup END
 
 " Airline
 set laststatus=2
 set linespace=0
-let g:airline_theme="luna"
+"let g:airline_theme="luna"
 let g:airline_powerline_fonts=1
 let g:airline#extensions#tabline#enabled = 1
-
-if !exists('g:airline_symbols')
-  let g:airline_symbols = {}
-endif
-
-" unicode symbols
-let g:airline_left_sep = '»'
-let g:airline_left_sep = '▶'
-let g:airline_right_sep = '«'
-let g:airline_right_sep = '◀'
-let g:airline_symbols.linenr = '␊'
-let g:airline_symbols.linenr = '␤'
-let g:airline_symbols.linenr = '¶'
-let g:airline_symbols.branch = '⎇'
-let g:airline_symbols.paste = 'ρ'
-let g:airline_symbols.paste = 'Þ'
-let g:airline_symbols.paste = '∥'
-let g:airline_symbols.whitespace = 'Ξ'
 
 " Yggdroot IndentLine color
 let g:indentLine_color_term = 239
