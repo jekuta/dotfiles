@@ -59,6 +59,13 @@ Plugin 'Julian/vim-textobj-brace'
 Plugin 'ntpeters/vim-better-whitespace'
 Plugin 'ntpeters/vim-airline-colornum'
 Plugin 'morhetz/gruvbox'
+Plugin 'kien/rainbow_parentheses.vim'
+
+" Rainbow parentheses
+au VimEnter * RainbowParenthesesToggle
+au Syntax * RainbowParenthesesLoadRound
+au Syntax * RainbowParenthesesLoadSquare
+au Syntax * RainbowParenthesesLoadBraces
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
