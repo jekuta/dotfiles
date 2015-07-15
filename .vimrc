@@ -68,6 +68,7 @@ filetype plugin indent on    " required
 set term=xterm-256color
 
 " Set colorscheme
+let g:gruvbox_italic=0
 colorscheme gruvbox
 " Set dark gruvbox
 set background=dark
