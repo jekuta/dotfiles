@@ -60,6 +60,7 @@ Plugin 'ntpeters/vim-better-whitespace'
 Plugin 'ntpeters/vim-airline-colornum'
 Plugin 'morhetz/gruvbox'
 Plugin 'kien/rainbow_parentheses.vim'
+Plugin 'edkolev/promptline.vim'
 
 " Rainbow parentheses
 au VimEnter * RainbowParenthesesToggle
@@ -92,7 +93,7 @@ augroup END
 " Airline
 set laststatus=2
 set linespace=0
-"let g:airline_theme="luna"
+let g:airline_theme="gruvbox"
 let g:airline_powerline_fonts=1
 let g:airline#extensions#tabline#enabled = 1
 
