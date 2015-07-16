@@ -93,7 +93,7 @@ augroup END
 " Airline
 set laststatus=2
 set linespace=0
-let g:airline_theme="gruvbox"
+let g:airline_theme="light"
 let g:airline_powerline_fonts=1
 let g:airline#extensions#tabline#enabled = 1
 
@@ -115,3 +115,11 @@ map <Leader>t :call RunCurrentSpecFile()<CR>
 map <Leader>s :call RunNearestSpec()<CR>
 map <Leader>l :call RunLastSpec()<CR>
 map <Leader>a :call RunAllSpecs()<CR>
+
+let g:promptline_preset = {
+      \'a'    : [ promptline#slices#host() ],
+      \'b'    : [ '\$' ],
+      \'c'    : [ promptline#slices#cwd() ],
+      \'y'    : [ promptline#slices#vcs_branch() ],
+      \'z'    : [ promptline#slices#git_status() ],
+      \'warn' : [ promptline#slices#last_exit_code() ] }
