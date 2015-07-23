@@ -1,13 +1,13 @@
-<h1>Vim</h1>
+#Vim
 
 use 7.4
 
-set 256 colors
-http://vim.wikia.com/wiki/256_colors_in_vim
+Set [powerline fonts](https://github.com/bling/vim-airline#integrating-with-powerline-fonts
+) for pretty airline
 
-Set download powerline fonts fonts for airline
-<h2>Plugins</h2>
-https://github.com/gmarik/Vundle.vim
+##Vundle Plugins
+For vim plugin management:
+(https://github.com/gmarik/Vundle.vim)
 https://github.com/flazz/vim-colorschemes
 https://github.com/bling/vim-airline
 https://github.com/Yggdroot/indentLine
