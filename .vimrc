@@ -16,15 +16,15 @@ set textwidth=100
 set colorcolumn=+1
 
 " Set line numbers
-set relativenumber 
-set number 
+set relativenumber
+set number
 
 set backspace=2   " Backspace deletes like most programs in insert mode
 set expandtab " Tab in insert mode will produce the appropriate number of spaces
 set shiftwidth=2 " How many columns text is indented with the reindent operations (<< and >>)
 set softtabstop=2 " How many columns vim uses when you hit Tab in insert mode
 set autoindent " Copy the indentation from the previous line
-" set foldmethod=syntax
+set foldmethod=syntax
 
 " Easier split navigation
 " http://robots.thoughtbot.com/vim-splits-move-faster-and-more-naturally
@@ -60,6 +60,7 @@ Plugin 'ntpeters/vim-airline-colornum'
 Plugin 'morhetz/gruvbox'
 Plugin 'kien/rainbow_parentheses.vim'
 Plugin 'edkolev/promptline.vim'
+Plugin 'Valloric/YouCompleteMe'
 
 " Rainbow parentheses
 au VimEnter * RainbowParenthesesToggle
