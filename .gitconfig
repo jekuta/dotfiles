@@ -1,14 +1,27 @@
+[color]
+	ui = true
 [user]
-	email = lpaakkinen@striketech.pl
-	name = Laura Paakkinen
+	name = Laura
+	email = murmeliusz@gmail.com
 [core]
+        editor = vim
+	autocrlf = input
+	safecrlf = true
 	excludesfile = /home/laura/.gitignore_global
-
+[diff]
+        tool = vimdiff
+[difftool]
+        prompt = false
+[merge]
+        tool = vimdiff
+[mergetool]
+        prompt = false
+        keepBackup = false
 [alias]
-  co = checkout
-  ci = commit
-  st = status
-  br = branch
-  hist = log --pretty=format:'%h %ad | %s%d [%an]' --graph --date=short
-  type = cat-file -t
-  dump = cat-file -p
+        co = checkout
+        ci = commit
+        st = status
+        br = branch
+        hist = log --pretty=format:'%h %ad | %s%d [%an]' --graph --date=short
+        type = cat-file -t
+        dump = cat-file -p

@@ -60,7 +60,7 @@ Plugin 'ntpeters/vim-airline-colornum'
 Plugin 'morhetz/gruvbox'
 Plugin 'kien/rainbow_parentheses.vim'
 Plugin 'edkolev/promptline.vim'
-Plugin 'jelera/vim-javascript-syntax' 
+Plugin 'jelera/vim-javascript-syntax'
 Plugin 'Raimondi/delimitMate'
 Plugin 'Valloric/YouCompleteMe'
 
