@@ -14,8 +14,14 @@ For plugin management
 Statusline
 https://github.com/bling/vim-airline
 
+###IndentLine
+Prettier indention
 https://github.com/Yggdroot/indentLine
+
+###CtrlP
+File finder
 https://github.com/kien/ctrlp.vim
+
 https://github.com/scrooloose/syntastic
 https://github.com/tpope/vim-fugitive
 https://github.com/thoughtbot/vim-rspec
