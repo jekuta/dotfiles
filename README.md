@@ -14,15 +14,18 @@ For plugin management
 Statusline
 https://github.com/bling/vim-airline
 
-###IndentLine
-Prettier indention
+###Indentline
+Display thin vertical lines at each indentation level
 https://github.com/Yggdroot/indentLine
 
-###CtrlP
-File finder
+###Ctrlp.vim
+Fuzzy finder
 https://github.com/kien/ctrlp.vim
 
+###Syntastic
+Syntax checking hacks for vim
 https://github.com/scrooloose/syntastic
+
 https://github.com/tpope/vim-fugitive
 https://github.com/thoughtbot/vim-rspec
 https://github.com/tpope/vim-surround

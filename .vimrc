@@ -24,7 +24,7 @@ set expandtab " Tab in insert mode will produce the appropriate number of spaces
 set shiftwidth=2 " How many columns text is indented with the reindent operations (<< and >>)
 set softtabstop=2 " How many columns vim uses when you hit Tab in insert mode
 set autoindent " Copy the indentation from the previous line
-" set foldmethod=syntax
+set foldmethod=syntax
 
 " Easier split navigation
 " http://robots.thoughtbot.com/vim-splits-move-faster-and-more-naturally
@@ -62,6 +62,7 @@ Plugin 'kien/rainbow_parentheses.vim'
 Plugin 'edkolev/promptline.vim'
 Plugin 'jelera/vim-javascript-syntax' 
 Plugin 'Raimondi/delimitMate'
+Plugin 'Valloric/YouCompleteMe'
 
 " Rainbow parentheses
 au VimEnter * RainbowParenthesesToggle
@@ -94,7 +95,7 @@ augroup END
 " Airline
 set laststatus=2
 set linespace=0
-let g:airline_theme="light"
+let g:airline_theme="laederon"
 let g:airline_powerline_fonts=1
 let g:airline#extensions#tabline#enabled = 1
 
@@ -117,6 +118,10 @@ map <Leader>s :call RunNearestSpec()<CR>
 map <Leader>l :call RunLastSpec()<CR>
 map <Leader>a :call RunAllSpecs()<CR>
 
+" Promptline settings
+" Remove old .shell_prompt.sh
+" and run PromptlineSnapshot ~/.shell_prompt.sh
+let g:promptline_theme = 'jelly'
 let g:promptline_preset = {
       \'a'    : [ promptline#slices#host() ],
       \'b'    : [ '\$' ],
