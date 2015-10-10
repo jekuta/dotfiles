@@ -7,7 +7,7 @@
         editor = vim
 	autocrlf = input
 	safecrlf = true
-	excludesfile = /home/laura/.gitignore_global
+	excludesfile = ~/.gitignore_global
 [diff]
         tool = vimdiff
 [difftool]
@@ -25,3 +25,4 @@
         hist = log --pretty=format:'%h %ad | %s%d [%an]' --graph --date=short
         type = cat-file -t
         dump = cat-file -p
+

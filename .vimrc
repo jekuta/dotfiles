@@ -24,7 +24,7 @@ set expandtab " Tab in insert mode will produce the appropriate number of spaces
 set shiftwidth=2 " How many columns text is indented with the reindent operations (<< and >>)
 set softtabstop=2 " How many columns vim uses when you hit Tab in insert mode
 set autoindent " Copy the indentation from the previous line
-set foldmethod=syntax
+"set foldmethod=syntax
 
 " Easier split navigation
 " http://robots.thoughtbot.com/vim-splits-move-faster-and-more-naturally
@@ -81,7 +81,7 @@ set term=xterm-256color
 let g:gruvbox_italic=0
 colorscheme gruvbox
 " Set dark gruvbox
-set background=dark
+set background=light
 
 " Make sure Vim returns to the same line when you reopen a file.
 augroup line_return
@@ -95,7 +95,7 @@ augroup END
 " Airline
 set laststatus=2
 set linespace=0
-let g:airline_theme="laederon"
+let g:airline_theme="light"
 let g:airline_powerline_fonts=1
 let g:airline#extensions#tabline#enabled = 1
 
