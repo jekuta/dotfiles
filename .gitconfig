@@ -26,3 +26,5 @@
         type = cat-file -t
         dump = cat-file -p
 
+[credential]
+	helper = osxkeychain

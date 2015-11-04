@@ -11,6 +11,10 @@ endif
 " Leader
 let mapleader = " "
 
+" Syntax higlighting for mac
+filetype plugin indent on
+syntax on
+
 " Make it obvious where 100 characters is
 set textwidth=100
 set colorcolumn=+1
@@ -62,7 +66,8 @@ Plugin 'kien/rainbow_parentheses.vim'
 Plugin 'edkolev/promptline.vim'
 Plugin 'jelera/vim-javascript-syntax'
 Plugin 'Raimondi/delimitMate'
-Plugin 'Valloric/YouCompleteMe'
+Plugin 'ngmy/vim-rubocop'
+"Plugin 'Valloric/YouCompleteMe'
 
 " Rainbow parentheses
 au VimEnter * RainbowParenthesesToggle
@@ -81,7 +86,7 @@ set term=xterm-256color
 let g:gruvbox_italic=0
 colorscheme gruvbox
 " Set dark gruvbox
-set background=light
+set background=dark
 
 " Make sure Vim returns to the same line when you reopen a file.
 augroup line_return
@@ -129,3 +134,7 @@ let g:promptline_preset = {
       \'y'    : [ promptline#slices#vcs_branch() ],
       \'z'    : [ promptline#slices#git_status() ],
       \'warn' : [ promptline#slices#last_exit_code() ] }
+
+" Vim-rubocop
+let g:vimrubocop_keymap = 0
+nmap <Leader>r :RuboCop<CR>
