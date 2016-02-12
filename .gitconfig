@@ -1,8 +1,8 @@
 [color]
 	ui = true
 [user]
-	name = Laura
-	email = murmeliusz@gmail.com
+	name = Laura Paakkinen
+	email = laura.paakkinen@u2i.com
 [core]
         editor = vim
 	autocrlf = input
@@ -28,3 +28,9 @@
 
 [credential]
 	helper = osxkeychain
+[gitflow "prefix"]
+    feature = feature/
+    release = release/
+    hotfix = hotfix/
+    support = support/
+    versiontag = v

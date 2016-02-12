@@ -14,4 +14,4 @@ alias gk='gitk --all&'
 
 # development aliases
 alias be='bundle exec'
-alias strchk='bundle exec rake strike:dev-tools:check'
+alias grbs='rubocop -a `git diff --name-only --cached | grep '\.rb'`'

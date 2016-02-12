@@ -68,6 +68,8 @@ Plugin 'jelera/vim-javascript-syntax'
 Plugin 'Raimondi/delimitMate'
 Plugin 'ngmy/vim-rubocop'
 "Plugin 'Valloric/YouCompleteMe'
+Plugin 'ecomba/vim-ruby-refactoring'
+Plugin 'tmhedberg/matchit'
 
 " Rainbow parentheses
 au VimEnter * RainbowParenthesesToggle
@@ -138,3 +140,6 @@ let g:promptline_preset = {
 " Vim-rubocop
 let g:vimrubocop_keymap = 0
 nmap <Leader>r :RuboCop<CR>
+
+" Ctrlp
+let g:ctrlp_user_command = 'find %s -type f | grep -v "`cat .ctrlpignore`"'
