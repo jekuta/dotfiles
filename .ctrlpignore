@@ -1,0 +1,13 @@
+\.log$
+.git
+.idea
+.DS_Store
+coverage
+**/*.svg
+**/*.ttf
+**/*.eot
+**/*.woff
+**/*.gif
+**/*.png
+**/*.jpg
+public
