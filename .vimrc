@@ -47,7 +47,8 @@ call vundle#begin()
 " let Vundle manage Vundle, required
 Plugin 'gmarik/Vundle.vim'
 
-Plugin 'bling/vim-airline'
+Plugin 'vim-airline/vim-airline'
+Plugin 'vim-airline/vim-airline-themes'
 Plugin 'Yggdroot/indentLine'
 Plugin 'ctrlpvim/ctrlp.vim'
 Plugin 'scrooloose/syntastic'
@@ -67,9 +68,13 @@ Plugin 'edkolev/promptline.vim'
 Plugin 'jelera/vim-javascript-syntax'
 Plugin 'Raimondi/delimitMate'
 Plugin 'ngmy/vim-rubocop'
-"Plugin 'Valloric/YouCompleteMe'
+Plugin 'Valloric/YouCompleteMe'
 Plugin 'ecomba/vim-ruby-refactoring'
 Plugin 'tmhedberg/matchit'
+Plugin 'airblade/vim-gitgutter'
+Plugin 'SirVer/ultisnips'
+Plugin 'honza/vim-snippets'
+Plugin 'wfleming/vim-codeclimate'
 
 " Rainbow parentheses
 au VimEnter * RainbowParenthesesToggle
@@ -143,3 +148,13 @@ nmap <Leader>r :RuboCop<CR>
 
 " Ctrlp
 let g:ctrlp_user_command = 'find %s -type f | grep -v "`cat .ctrlpignore`"'
+
+" GitGutter
+set updatetime=250
+
+" Ultisnips
+let g:UltiSnipsExpandTrigger="<c-j>"
+
+" Spell check and automatically wrap git commit messages
+" https://robots.thoughtbot.com/5-useful-tips-for-a-better-commit-message
+autocmd Filetype gitcommit setlocal spell textwidth=72

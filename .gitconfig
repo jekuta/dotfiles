@@ -25,7 +25,6 @@
         hist = log --pretty=format:'%h %ad | %s%d [%an]' --graph --date=short
         type = cat-file -t
         dump = cat-file -p
-
 [credential]
 	helper = osxkeychain
 [gitflow "prefix"]
@@ -34,3 +33,7 @@
     hotfix = hotfix/
     support = support/
     versiontag = v
+[filter "lfs"]
+	clean = git-lfs clean %f
+	smudge = git-lfs smudge %f
+	required = true

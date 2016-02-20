@@ -3,6 +3,7 @@
 # for examples
 export TERM=xterm-256color
 source "$HOME/.vim/bundle/gruvbox/gruvbox_256palette.sh"
+alias vim='~/vim/src/vim'
 
 # If not running interactively, don't do anything
 case $- in
@@ -65,10 +66,10 @@ if ! shopt -oq posix; then
   fi
 fi
 
-export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
 export PATH="$PATH:$HOME/node_modules/chromedriver/bin"
 export GIT_PS1_SHOWDIRTYSTATE=1
 export PS1='\[\033[34m\] \w\[\033[01;33m\]$(__git_ps1)\[\033[01;34m\] \$\[\033[00m\] '
 source ~/.shell_prompt.sh
-export PATH="$HOME/.rbenv/bin:$PATH"
-eval "$(rbenv init -)"
+export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
+source ~/.rvm/scripts/rvm
+export VIMRUNTIME=/usr/share/vim/vim73
