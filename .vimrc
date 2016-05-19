@@ -75,6 +75,8 @@ Plugin 'airblade/vim-gitgutter'
 Plugin 'SirVer/ultisnips'
 Plugin 'honza/vim-snippets'
 Plugin 'wfleming/vim-codeclimate'
+Plugin 'vim-ruby/vim-ruby'
+Plugin 'koron/nyancat-vim'
 
 " Rainbow parentheses
 au VimEnter * RainbowParenthesesToggle
@@ -147,7 +149,7 @@ let g:vimrubocop_keymap = 0
 nmap <Leader>r :RuboCop<CR>
 
 " Ctrlp
-let g:ctrlp_user_command = 'find %s -type f | grep -v "`cat .ctrlpignore`"'
+let g:ctrlp_user_command = 'find %s -type f | grep -v "`[[ -f .ctrlpignore ]] && cat .ctrlpignore`"'
 
 " GitGutter
 set updatetime=250
