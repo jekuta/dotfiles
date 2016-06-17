@@ -10,30 +10,43 @@ Set [powerline fonts](https://github.com/bling/vim-airline#integrating-with-powe
 For plugin management
 (https://github.com/gmarik/Vundle.vim)
 
-###Vim-Airline
-Statusline
-https://github.com/bling/vim-airline
+[vim-airline/vim-airline](https://github.com/vim-airline/vim-airline) # lean & mean status/tabline for vim that's light as air
 
-###Indentline
-Display thin vertical lines at each indentation level
-https://github.com/Yggdroot/indentLine
+[vim-airline/vim-airline-themes](https://github.com/vim-airline/vim-airline-themes) # A collection of themes for vim-airline
 
-###Ctrlp.vim
-Fuzzy finder
-https://github.com/kien/ctrlp.vim
+[Yggdroot/indentLine](https://github.com/Yggdroot/indentLine) # A vim plugin to display the indention levels with thin vertical lines
 
-###Syntastic
-Syntax checking hacks for vim
-https://github.com/scrooloose/syntastic
+# Plugin 'ctrlpvim/ctrlp.vim'
 
-https://github.com/tpope/vim-fugitive
-https://github.com/thoughtbot/vim-rspec
-https://github.com/tpope/vim-surround
-https://github.com/bling/vim-bufferline
-https://github.com/scrooloose/nerdcommenter
+# Plugin 'scrooloose/syntastic'
 
-###Vim Textobj-rubyblock
-Select rubyblocks as text objects
-https://github.com/nelstrom/vim-textobj-rubyblock
+[tpope/vim-fugitive](https://github.com/tpope/vim-fugitive) # a Git wrapper
 
-https://github.com/Julian/vim-textobj-brace
+# https://github.com/thoughtbot/vim-rspec # Run Rspec specs
+
+[janko-m/vim-test](https://github.com/janko-m/vim-test) # Run your tests at the speed of thought
+
+[tpope/vim-surround](https://github.com/tpope/vim-surround) # 
+
+[bling/vim-bufferline](https://github.com/bling/vim-bufferline) # vim plugin to show the list of buffers in the command bar
+Plugin 'scrooloose/nerdcommenter'
+Plugin 'kana/vim-textobj-user'
+Plugin 'nelstrom/vim-textobj-rubyblock'
+Plugin 'Julian/vim-textobj-brace'
+Plugin 'ntpeters/vim-better-whitespace'
+Plugin 'ntpeters/vim-airline-colornum'
+Plugin 'morhetz/gruvbox'
+Plugin 'kien/rainbow_parentheses.vim'
+Plugin 'edkolev/promptline.vim'
+Plugin 'jelera/vim-javascript-syntax'
+Plugin 'Raimondi/delimitMate'
+Plugin 'ngmy/vim-rubocop'
+Plugin 'Valloric/YouCompleteMe'
+Plugin 'ecomba/vim-ruby-refactoring'
+Plugin 'tmhedberg/matchit'
+Plugin 'airblade/vim-gitgutter'
+Plugin 'SirVer/ultisnips'
+Plugin 'honza/vim-snippets'
+Plugin 'wfleming/vim-codeclimate'
+Plugin 'vim-ruby/vim-ruby'
+Plugin 'koron/nyancat-vim'
