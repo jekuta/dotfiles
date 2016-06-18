@@ -28,6 +28,7 @@ For plugin management
 
 [bling/vim-bufferline](https://github.com/bling/vim-bufferline) # vim plugin to show the list of buffers in the command bar
 
+[tomtom/tcomment_vim](https://github.com/tomtom/tcomment_vim) # An extensible & universal comment vim-plugin
 ```
 Plugin 'scrooloose/nerdcommenter'
 Plugin 'kana/vim-textobj-user'
