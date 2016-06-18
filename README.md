@@ -24,7 +24,7 @@ For plugin management
 
 [janko-m/vim-test](https://github.com/janko-m/vim-test) # Run your tests at the speed of thought
 
-[tpope/vim-surround](https://github.com/tpope/vim-surround) # https://github.com/tpope/vim-surround
+[tpope/vim-surround](https://github.com/tpope/vim-surround) # Quoting/parenthesizing made simple
 
 [bling/vim-bufferline](https://github.com/bling/vim-bufferline) # vim plugin to show the list of buffers in the command bar
 
