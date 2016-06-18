@@ -16,19 +16,19 @@ For plugin management
 
 [Yggdroot/indentLine](https://github.com/Yggdroot/indentLine) # A vim plugin to display the indention levels with thin vertical lines
 
-# Plugin 'ctrlpvim/ctrlp.vim'
+# [ctrlpvim/ctrlp.vim](https://github.com/ctrlpvim/ctrlp.vim) # Fuzzy file, buffer, mru, tag, etc finder
 
-# Plugin 'scrooloose/syntastic'
+# [scrooloose/syntastic](https://github.com/scrooloose/syntastic) # Syntax checking hacks for vim
 
 [tpope/vim-fugitive](https://github.com/tpope/vim-fugitive) # a Git wrapper
 
-# https://github.com/thoughtbot/vim-rspec # Run Rspec specs
-
 [janko-m/vim-test](https://github.com/janko-m/vim-test) # Run your tests at the speed of thought
 
-[tpope/vim-surround](https://github.com/tpope/vim-surround) # 
+[tpope/vim-surround](https://github.com/tpope/vim-surround) # https://github.com/tpope/vim-surround
 
 [bling/vim-bufferline](https://github.com/bling/vim-bufferline) # vim plugin to show the list of buffers in the command bar
+
+```
 Plugin 'scrooloose/nerdcommenter'
 Plugin 'kana/vim-textobj-user'
 Plugin 'nelstrom/vim-textobj-rubyblock'
