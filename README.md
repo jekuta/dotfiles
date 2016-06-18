@@ -6,7 +6,7 @@ Set [powerline fonts](https://github.com/bling/vim-airline#integrating-with-powe
 ) for pretty airline
 
 ##Plugins
-###Vundle
+####Vundle
 For plugin management
 (https://github.com/gmarik/Vundle.vim)
 
@@ -16,9 +16,9 @@ For plugin management
 
 [Yggdroot/indentLine](https://github.com/Yggdroot/indentLine) # A vim plugin to display the indention levels with thin vertical lines
 
-# [ctrlpvim/ctrlp.vim](https://github.com/ctrlpvim/ctrlp.vim) # Fuzzy file, buffer, mru, tag, etc finder
+[ctrlpvim/ctrlp.vim](https://github.com/ctrlpvim/ctrlp.vim) # Fuzzy file, buffer, mru, tag, etc finder
 
-# [scrooloose/syntastic](https://github.com/scrooloose/syntastic) # Syntax checking hacks for vim
+[scrooloose/syntastic](https://github.com/scrooloose/syntastic) # Syntax checking hacks for vim
 
 [tpope/vim-fugitive](https://github.com/tpope/vim-fugitive) # a Git wrapper
 
